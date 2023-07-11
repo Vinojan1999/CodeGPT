@@ -1,0 +1,3 @@
+-   Create the vanilla template project with Vite
+-   Import all the assests to client
+-   Paste the main CSS code to style.css
