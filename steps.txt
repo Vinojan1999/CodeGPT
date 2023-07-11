@@ -1,3 +1,18 @@
 -   Create the vanilla template project with Vite
 -   Import all the assests to client
 -   Paste the main CSS code to style.css
+-   Create the form element in index.html
+-   Create script.js file 
+-   Import the script.js to index.html
+-   In the script.js
+    Import images and selecting the query from the HTML
+    create a variable as loadInterval
+    create a function as loader() to display 3 dots loader
+    create a function as typeText() to type content one letter by letter
+    create a function as generateUniqueId to generate unique id for every single message
+    create a function as chatStripe to show AI generated content
+    create handleSubmit function
+    Add user's chatStripe into handleSubmit function
+    Add AI's chatStripe into handleSubmit function
+    Add autoscroll fuction to see the message that typed recently
+    Add event listener to the form element to call handleSubmit function
