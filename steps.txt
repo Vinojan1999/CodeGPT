@@ -16,3 +16,28 @@
     Add AI's chatStripe into handleSubmit function
     Add autoscroll fuction to see the message that typed recently
     Add event listener to the form element to call handleSubmit function
+-   Check the application UI
+
+-   Create server folder and init npm 
+-   install dependancies (cors, dotenv, express, nodemon, openai)
+-   Create server.js file
+-   Import dependancies
+-   use OpenAPI key (configuration)
+-   Create an Instance (openai)
+-   Initialize the express application
+-   Setup middlewares
+-   Create a GET route to handle the request
+-   Create a POST route to handle the request
+    Get the response from the OpenAPI
+    Go to the OpenAI website, Login and generate a new API key for you, then copy and paste in into your .env file
+    Visit the openai's "Natural language to OpenAI API" playground model, 
+        and select the model and copy the code and paste them into the 'response'
+-   Listen server
+-   Add server, type in package.json file
+-   Run the backend application (Now you can see the message in browser)
+
+-   Fetch the data from the server in frontend
+-   pass the data
+-   Run the both frontend and backend applications (It will working fine)
+
+-   Push the code into GitHub
