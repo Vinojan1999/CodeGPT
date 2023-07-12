@@ -14,7 +14,7 @@ body {
 #app {
   width: 100vw;
   height: 100vh;
-  background: #343541;
+  background: #181F2A;
 
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 
-  padding-bottom: 20px;
+  padding: 20px;
   scroll-behavior: smooth;
 }
 
@@ -46,11 +46,14 @@ body {
 
 .wrapper {
   width: 100%;
-  padding: 15px;
+  padding: 15px 24px;
 }
 
 .ai {
-  background: #40414F;
+  background: #28374791;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 10px;
 }
 
 .chat {
@@ -61,7 +64,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 10px;
+  gap: 15px;
 }
 
 .profile {
@@ -77,7 +80,7 @@ body {
 }
 
 .ai .profile {
-  background: #10a37f;
+  background: #E5F7FF;
 }
 
 .profile img {
@@ -91,6 +94,7 @@ body {
 
   color: #dcdcdc;
   font-size: 20px;
+  margin-top: 5px;
 
   max-width: 100%;
   overflow-x: scroll;
@@ -117,11 +121,42 @@ form {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #40414F;
+  background: #283747;
 
   display: flex;
   flex-direction: row;
   gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #chat_container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .wrapper {
+    padding: 15px;
+  }
+  .ai {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .message {
+    font-size: 18px;
+    margin-top: 7px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #chat_container {
+    max-width: 1400px;
+  }
+  .chat {
+    margin: 0;
+  }
+  form {
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 textarea {
@@ -147,4 +182,5 @@ button {
 form img {
   width: 30px;
   height: 30px;
+  margin-top: 5px;
 }

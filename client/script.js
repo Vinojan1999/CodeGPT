@@ -1,5 +1,5 @@
-import bot from './assets/bot.svg';
-import user from './assets/user.svg';
+import bot from './assets/bot.png';
+import user from './assets/user.png';
 
 const form = document.querySelector('form');                            // using the tag name
 const chatContainer = document.querySelector('#chat_container');        // using the id 
@@ -25,7 +25,7 @@ function typeText(element, text) {
 
   let interval = setInterval(() => {
     if(index < text.length) {
-      element.innerHTML += text.chartAt(index);
+      element.innerHTML += text.charAt(index);
       index++;
     } else {
       clearInterval(interval);
@@ -84,6 +84,35 @@ const handleSubmit = async (e) => {
   const messageDiv = document.getElementById(uniqueId);
 
   loader(messageDiv);
+
+  // Fetch the response from the server -> Bot's response
+  const response = await fetch('http://localhost:5000/', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    // Passing the object
+    body: JSON.stringify({
+      prompt: data.get('prompt')    // comming from textarea input
+    })
+  })
+
+  clearInterval(loadInterval);
+  messageDiv.innerHTML = '';
+
+  if(response.ok) {
+    const data = await response.json();   // Actual response coming from the backend
+    const parsedData = data.bot.trim();
+
+    console.log(parsedData);
+
+    typeText(messageDiv, parsedData);     // pass it to the function
+  } else {
+    const err = await response.text();
+
+    messageDiv.innerHTML = "Something went wrong!";
+    alert(err)
+  }
 }
 
 // Once we submit, We want to call the handleSubmit fuction
