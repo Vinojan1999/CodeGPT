@@ -41,3 +41,7 @@
 -   Run the both frontend and backend applications (It will working fine)
 
 -   Push the code into GitHub
+-   Deploy the backend application in Render
+-   Add Environment Variables as OPENAI_API_KEY
+-   Copy the server link and paste it in frontend route path
+-   Deploy the frontend application in Vercel

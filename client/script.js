@@ -86,7 +86,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 
   // Fetch the response from the server -> Bot's response
-  const response = await fetch('http://localhost:5000/', {
+  const response = await fetch('https://codegpt-zl3k.onrender.com', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

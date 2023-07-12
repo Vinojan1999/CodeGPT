@@ -46,4 +46,4 @@ app.post('/',  async (req, res) => {
     }
 })
 
-app.listen(5000, () => console.log("Server is running on PORT http://localhost:5000"));
+app.listen(5000, () => console.log("Server is running on https://codegpt-zl3k.onrender.com"));
