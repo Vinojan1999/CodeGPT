@@ -283,5 +283,17 @@ form img {
   font-weight: 500;
 }
 
+@media screen and (max-width: 768px) {
+  .overlay .popup {
+    padding: 20px 30px;
+    max-width: 98%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .overlay .popup {
+    display: none;
+  }
+}
+
 
 /*  */
