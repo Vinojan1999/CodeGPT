@@ -17,8 +17,35 @@
         <textarea name="prompt" rows="1" cols="1" placeholder="Ask anything..."></textarea>
         <button type="submit"> <img src="assets/send.png" /> </button>
       </form>
+      
     </div>
 
+    <!-- Popup HTML -->
+    <div class="overlay" id="overlay">
+      <div class="popup">
+          <button class="close-button" onclick="closePopup()">
+              <img src="/assets/close.png" alt="Close">
+          </button>
+
+          <div class="logo">
+            <img src="/assets/bot2.png" alt="Logo">
+            <h1>CodeGPT</h1>
+          </div>
+
+          <h1>Welcome to Our AI Code Assistant</h1>
+          <p>Thank you for using our application. We're here to assist you with your coding needs.</p>
+          <p>Please note that all responses from the AI Code Assistant are generated based on predefined knowledge and may not always provide accurate or optimal solutions.</p>
+          <hr class="break-line">
+          
+          <div class="copyright">
+            <p>&copy; 2023 Designed & Developed by <a href="https:vinojan.online" target="_blank">Vinojan Abhimanyu</a>.</p>
+          </div>
+      </div>
+    </div>
+    
+
+    <script type="module" src="/popup.js"></script>
     <script type="module" src="/script.js"></script>
+
   </body>
 </html>
