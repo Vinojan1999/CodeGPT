@@ -45,3 +45,5 @@
 -   Add Environment Variables as OPENAI_API_KEY
 -   Copy the server link and paste it in frontend route path
 -   Deploy the frontend application in Vercel
+
+-   Updated the Remote repository url
